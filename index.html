@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <style>
+            .wikiInfo {
+                display: flex;
+                justify-content: space-around;
+            }
+            #waiter {
+                display: none;
+            }
+            table {
+                width: 100%;
+            }
+            tbody td{
+                height: 30px;
+                width: 50%;
+            }
+            tbody td span {
+                min-width: 18%;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section>
+                <input id="searchInput" type="text" />
+                <select id="searchType">
+                    <option>Search Source</option>
+                    <option value="hacker">Hacker News</option>
+                    <option value="wiki">Wiki News</option>
+                </select>
+                <input type="submit" id="searchBtn"/>
+            </section>
+            <section>
+                <div id="waiter">
+                    Please wait...
+                </div>
+                <div id="hackerSearch">
+                    <table>
+                        <tbody id="hackerInformation">
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div id="wikiSearch">
+                    <div id="wikiInformation"></div>
+                </div>
+            </section>
+        </main>
+        <script src="./index.js"></script>
+    </body>
+</html>
